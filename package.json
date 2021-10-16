@@ -1,0 +1,23 @@
+{
+  "name": "is_digit",
+  "version": "0.0.1",
+  "description": "A simple Node.js package to check if your variable is an integer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KSJaay/is_digit.git"
+  },
+  "keywords": [
+    "is_digit",
+    "integer"
+  ],
+  "author": "KSJaay.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/KSJaay/is_digit/issues"
+  },
+  "homepage": "https://github.com/KSJaay/is_digit#readme"
+}
