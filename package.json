@@ -12,7 +12,8 @@
   },
   "keywords": [
     "is_digit",
-    "integer"
+    "integer",
+    "digit"
   ],
   "author": "KSJaay.com",
   "license": "Apache-2.0",
