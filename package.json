@@ -1,6 +1,6 @@
 {
   "name": "@ksjaay/is_digit",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A simple Node.js package to check if your variable is an integer.",
   "main": "index.js",
   "scripts": {

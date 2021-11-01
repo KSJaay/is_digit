@@ -1,7 +1,7 @@
 function is_Digit(value){
     switch (typeof value){
         case 'string': {
-            if(/^\d$/.test(value)){
+            if(/^-?\d+$/.test(value)){
                 return true;
             };
             return false;
@@ -14,12 +14,12 @@ function is_Digit(value){
         }
         case 'object': {
             if(Array.isArray(value)){
-                let check = value.filter(x => !(/^\d$/.test(x)));
+                let check = value.filter(x => !(/^-?\d+$/.test(x)));
                 if(check.length > 0) return false;
                 return true;
             };
-            let keys = Object.keys(value).filter(x => !(/^\d$/.test(x)));
-            let values = Object.values(value).filter(x => !(/^\d$/.test(x)));
+            let keys = Object.keys(value).filter(x => !(/^-?\d+$/.test(x)));
+            let values = Object.values(value).filter(x => !(/^-?\d+$/.test(x)));
             if(keys.length > 0 || values.length > 0){
                 return false;
             };
@@ -37,8 +37,8 @@ function is_Object_Digits(data, key, value){
         return false;
     };
 
-    let keys = !key ? [] : Object.keys(data).filter(x => !(/^\d$/.test(x)));
-    let values = !value ? [] : Object.values(data).filter(x => !(/^\d$/.test(x)));
+    let keys = !key ? [] : Object.keys(data).filter(x => !(/^-?\d+$/.test(x)));
+    let values = !value ? [] : Object.values(data).filter(x => !(/^-?\d+$/.test(x)));
 
     if(keys.length > 0 || values.length > 0){
         return false;
